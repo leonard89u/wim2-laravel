@@ -32,6 +32,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
+                    <li class="nav-item">    
+                        <a class="nav-link active" href="/">Accueil</a> 
+                    </li> 
+                    <li class="nav-item">    
+                        <a class="nav-link" href="a-propos">A propos</a> 
+                    </li> <li class="nav-item">    
+                        <a class="nav-link" href="contact">Contactez-nous</a> 
+                    </li> <li class="nav-item">    
+                        <a class="nav-link" href="clients">Voir nos clients</a> 
+                    </li>
+
                     <ul class="navbar-nav mr-auto">
 
                     </ul>

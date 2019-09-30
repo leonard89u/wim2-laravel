@@ -27,6 +27,10 @@ Route::get('a-propos', function () {
 Route::get('/salut/{name}', function ($name) {
     return "Salut $name"; }); 
 
+Route::get('/clients', 'ClientsController@index');
+
+Route::post('clients', 'ClientsController@store');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
