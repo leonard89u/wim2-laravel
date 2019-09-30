@@ -17,6 +17,7 @@ class CreateClientsTable extends Migration
             $table->string('name'); 
             $table->string('email');
             $table->bigIncrements('id');
+            $table->integer('status');
             $table->timestamps();
         });
     }
