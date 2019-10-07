@@ -7,7 +7,7 @@
 
         <ul>    
             <?php foreach ($clients as $client): ?>
-                <li><?= $client->name ?></li>    
+            <LI><a href="/clients/{{ $client->id }}">{{ $client->name }}</a></LI>     
             <?php endforeach; ?> 
         </ul>
 

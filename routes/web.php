@@ -24,6 +24,8 @@ Route::get('a-propos', function () {
     return view('a-propos');
 });
 
+Route::get('/clients', 'ClientsController@show');
+
 Route::get('/salut/{name}', function ($name) {
     return "Salut $name"; }); 
 
@@ -33,4 +35,12 @@ Route::post('clients', 'ClientsController@store');
 
 Auth::routes();
 
+Route::get('/clients/{client}/edit', 'ClientsController@edit');
+
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/clients/{client}', 'ClientsController@show');
+
+Route::patch('/clients/{client}', 'ClientsController@update'); 
+
+Route::patch('/clients/{client}', 'ClientsController@update');
